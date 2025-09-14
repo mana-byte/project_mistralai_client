@@ -30,7 +30,7 @@ cd project_mistralai_client
 - Go into the frontend directory and install dependencies:
   ```bash
   cd chat_gourmand
-  npm install   # or: yarn install
+  npm install
   ```
 
 ### 3️⃣ Install with npm or yarn
@@ -38,7 +38,7 @@ cd project_mistralai_client
 - Go into the frontend directory and install dependencies:
   ```bash
   cd chat_gourmand
-  npm install
+  npm install   # or: yarn install
   ```
 
 ---
