@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍽️ Projet mistralai: Chat Gourmand CLIENT
 
-## Getting Started
+Welcome to the frontend client for the [Chat Gourmand backend](https://github.com/mana-byte/project_mistralai)!  
+This project lets you interact with the backend in a simpler way. 😋
 
-First, run the development server:
+---
 
+## 📦 Requirements
+- [Node.js](https://nodejs.org/) 16+
+- npm or yarn
+
+---
+
+## 🚀 Installation
+
+### 1️⃣ Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/mana-byte/project_mistralai_client.git
+cd project_mistralai_client
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+> **Note:** THERE ARE **TWO DIFFERENT** INSTALLATION METHODS. Choose **ONE** of them
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2️⃣ Install with Nix/NixOS (Flake)
+- Install [Nix](https://nixos.org/)
+- Enter shell with dependencies:
+  ```bash
+  sudo nix develop
+  ```
+- Go into the frontend directory and install dependencies:
+  ```bash
+  cd chat_gourmand
+  npm install   # or: yarn install
+  ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 3️⃣ Install with npm or yarn
+- Make sure Node.js is installed
+- Go into the frontend directory and install dependencies:
+  ```bash
+  cd chat_gourmand
+  npm install   # or: yarn install
+  ```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🏃 Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Start the development server
+```bash
+npm run dev    # or: yarn dev
+```
+Open your browser and go to [http://localhost:3000](http://localhost:3000) to see the application! 🌐
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> **Note:**  
+> This frontend requires the backend server to be running.  
+> See the [backend repository](https://github.com/mana-byte/project_mistralai) for details.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Build for production
+```bash
+npm run build  # or: yarn build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚢 Start the production server
+```bash
+npm start      # or: yarn start
+```
+
