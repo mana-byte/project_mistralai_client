@@ -40,6 +40,7 @@
         buildInputs = with pkgs; [
           biome
           nodejs_24
+          eslint
         ];
 
         shellHook = ''

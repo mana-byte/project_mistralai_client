@@ -1,5 +1,5 @@
 {
-  "name": "chat_gourmand",
+  "name": "chat-gourmand",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "@mistralai/mistralai": "^1.10.0",
-    "biome": "^0.3.3",
     "bootstrap": "^5.3.8",
+    "eslint": "^9.36.0",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
@@ -25,5 +25,19 @@
     "@types/react-dom": "^19",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "description": "Welcome to the frontend client for the [Chat Gourmand backend](https://github.com/mana-byte/project_mistralai)!   This project lets you interact with the backend in a simpler way. 😋",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mana-byte/project_mistralai_client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mana-byte/project_mistralai_client/issues"
+  },
+  "homepage": "https://github.com/mana-byte/project_mistralai_client#readme"
 }
