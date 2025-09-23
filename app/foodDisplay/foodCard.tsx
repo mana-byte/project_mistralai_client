@@ -1,20 +1,18 @@
 "use client";
 
-export default function FoodCard({
-	params,
-}: {
-	params: {
-		id: number;
-		name: string;
-		average_calories: number;
-		times_eaten: number;
-	};
-}) {
+type FoodParams = {
+	id: number;
+	name: string;
+	average_calories: number;
+	times_eaten: number;
+};
+
+export default function FoodCard(params: FoodParams) {
 	if (!params) {
 		return <div>Loading...</div>;
 	}
 	return (
-		<div> 
+		<div>
 			<div className="glass-card" style={{ width: "18rem", margin: "10px" }}>
 				<div
 					className="card-body"

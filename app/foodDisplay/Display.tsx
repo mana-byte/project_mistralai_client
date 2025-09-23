@@ -6,7 +6,17 @@ import HistoryCard from "./historyCard";
 import { useState } from "react";
 import Slider from "react-slick";
 
-export default function Display(params: { foods: any[]; foodHist: any[] }) {
+type Display = {
+	foods: {
+		id: number;
+		name: string;
+		average_calories: number;
+		times_eaten: number;
+	}[];
+	foodHist: { eaten_food_id: number; name: string; calories: number }[];
+};
+
+export default function Display({ foods, foodHist }: Display) {
 	const [foodDisplay, setFoodDisplay] = useState(true);
 	const [buttonText, setButtonText] = useState("Show History of meals");
 	const settings = {

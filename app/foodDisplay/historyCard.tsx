@@ -1,10 +1,12 @@
 "use client";
 
-export default function historyCard({
-	params,
-}: {
-	params: { id: number; name: string; calories: number };
-}) {
+type HistoryParams = {
+	id: number;
+	name: string;
+	calories: number;
+};
+
+export default function historyCard(params: HistoryParams) {
 	if (!params) {
 		return <div>Loading...</div>;
 	}
