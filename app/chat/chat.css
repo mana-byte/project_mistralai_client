@@ -1,0 +1,80 @@
+
+.invisible-form {
+  opacity: 0;
+  pointer-events: auto;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.replacement-input {
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 25%;
+  width: 100%;
+  height: 20px;
+}
+
+.glass-card-form-input {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  border-radius: 80px;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  /* Glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  /* Optional styling */
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  transition: width 0.4s ease;
+  color: white;
+}
+
+
+.glass-card-form-output {
+  /* opacity: 0; */
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  border-radius: 40px;
+  padding: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  /* Optional styling */
+  box-shadow: 0 4px 16px 0 rgba(31, 38, 135, 0.37);
+  width: 0px;
+  height: 0px;
+  transition: width 2s ease, height 2s ease;
+  color: white;
+}
+
+.bounce {
+  animation: bounce 1s infinite;
+}
+
+.blink {
+  animation: blink 1.5s step-end infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}

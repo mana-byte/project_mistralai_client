@@ -42,7 +42,7 @@ export default function UploadForm() {
 
 	return (
 		<div className="container mt-5 d-flex justify-content-center">
-			<div className="card shadow" style={{ maxWidth: 400, width: "100%" }}>
+			<div className="card shadow glass-card" style={{ maxWidth: 400, width: "100%" }}>
 				<div className="card-body">
 					<h5 className="card-title text-center mb-4">Analyze Food Image</h5>
 					<form onSubmit={handleSubmit}>

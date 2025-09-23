@@ -1,8 +1,4 @@
-import Image from "next/image";
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Display from "./foodDisplay/Display";
-import UploadForm from "./forms/uploadForm";
-import ChatCoach from "./chat/chatCoach";
+import ClientHome from "./clientPage";
 
 async function getDataFood() {
 	try {
@@ -30,13 +26,5 @@ export default async function Home() {
 	const foods = await getDataFood();
 	const foodHist = await getDataFoodHist();
 	const total_cal = foodHist.pop();
-	console.log(foods);
-	console.log(foodHist);
-	return (
-		<div>
-			<Display foods={foods} foodHist={foodHist} />
-			<UploadForm />
-			<ChatCoach />
-		</div>
-	);
+	return <ClientHome foods={foods} foodHist={foodHist} />;
 }

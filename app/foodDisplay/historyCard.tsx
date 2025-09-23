@@ -1,7 +1,4 @@
 "use client";
-import Image from "next/image";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Router from "next/router";
 
 export default function historyCard({
 	params,
@@ -13,11 +10,10 @@ export default function historyCard({
 	}
 	return (
 		<div>
-			<div className="card" style={{ width: "18rem", margin: "10px" }}>
+			<div className="glass-card" style={{ width: "18rem" }}>
 				<div
 					className="card-body"
 					style={{
-						border: "5px solid #ccc",
 						borderRadius: "5px",
 						padding: "10px",
 						textAlign: "center",

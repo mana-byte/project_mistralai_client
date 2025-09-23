@@ -1,32 +1,68 @@
-@import "tailwindcss";
+.glass-card {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+
+  /* Optional styling */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: background 0.8s ease, box-shadow 5s ease;
+  color: white;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.glass-text-bubble {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent background */
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 1rem;
+  /* Glass effect */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  /* Optional styling */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: background 0.8s ease, box-shadow 5s ease;
+  color: white;
+  margin-bottom: 1rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.glass-text-bubble:hover {
+  background: black;
+  font-weight: 900;
+  animation: jiggle 0.4s ease;
+}
+
+.glass-text-bubble:active {
+  background: black;
+  font-weight: 900;
+  animation: bounce 0.4s ease;
+}
+
+
+.glass-card:hover {
+  background: black;
+  font-weight: 900;
+  animation: bounce 0.4s ease;
+}
+
+
+@keyframes jiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1.5deg); }
+  50% { transform: rotate(-1.5deg); }
+  75% { transform: rotate(1.5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
-
-.gradient-pink-lavender {
-  background: linear-gradient(135deg, #ff5fcb 0%, #b993d6 100%);
-  min-height: 100vh;
-}
-
-
-.gradient-mint-sky {
-  background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 50%, #57c1eb 100%);
-  min-height: 100vh;
-}
-
