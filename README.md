@@ -2,8 +2,9 @@
 
 Welcome to the frontend client for the [Chat Gourmand backend](https://github.com/mana-byte/project_mistralai)!  
 This project lets you interact with the backend in a simpler way. 😋
+Glassy design like apple liquid glass !
 
-https://github.com/user-attachments/assets/391f307d-5afa-4447-99d9-161aed183c29
+https://github.com/user-attachments/assets/403a6f18-31ac-4114-9668-57e2fc5bbd02
 
 ---
 
