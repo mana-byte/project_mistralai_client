@@ -6,7 +6,7 @@ type HistoryParams = {
 	calories: number;
 };
 
-export default function historyCard(params: HistoryParams) {
+export default function historyCard({params}: {params: HistoryParams}) {
 	if (!params) {
 		return <div>Loading...</div>;
 	}

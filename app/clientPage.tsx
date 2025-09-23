@@ -10,8 +10,8 @@ type clientHome = {
 		name: string;
 		average_calories: number;
 		times_eaten: number;
-	};
-	foodHist: { id: number; name: string; calories: number };
+	}[];
+	foodHist: { id: number; name: string; calories: number }[];
 };
 
 export default function ClientHome({ foods, foodHist }: clientHome) {

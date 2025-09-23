@@ -7,7 +7,7 @@ type FoodParams = {
 	times_eaten: number;
 };
 
-export default function FoodCard(params: FoodParams) {
+export default function FoodCard({params}: {params: FoodParams}) {
 	if (!params) {
 		return <div>Loading...</div>;
 	}

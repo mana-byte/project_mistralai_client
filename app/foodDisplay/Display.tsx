@@ -16,7 +16,7 @@ type Display = {
 	foodHist: { eaten_food_id: number; name: string; calories: number }[];
 };
 
-export default function Display(params: Display) {
+export default function Display({ foods, foodHist }: Display) {
 	const [foodDisplay, setFoodDisplay] = useState(true);
 	const [buttonText, setButtonText] = useState("Show History of meals");
 	const settings = {
@@ -46,7 +46,7 @@ export default function Display(params: Display) {
 			</div>
 			{foodDisplay ? (
 				<Slider {...settings}>
-					{params.foods.map(
+					{foods.map(
 						(food: {
 							id: number;
 							name: string;
@@ -68,7 +68,7 @@ export default function Display(params: Display) {
 				</Slider>
 			) : (
 				<Slider {...settings}>
-					{params.foodHist.map(
+					{foodHist.map(
 						(food: {
 							eaten_food_id: number;
 							name: string;
