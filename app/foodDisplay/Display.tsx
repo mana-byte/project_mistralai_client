@@ -16,7 +16,7 @@ type Display = {
 	foodHist: { eaten_food_id: number; name: string; calories: number }[];
 };
 
-export default function Display({ foods, foodHist }: Display) {
+export default function Display(params: Display) {
 	const [foodDisplay, setFoodDisplay] = useState(true);
 	const [buttonText, setButtonText] = useState("Show History of meals");
 	const settings = {
@@ -36,7 +36,6 @@ export default function Display({ foods, foodHist }: Display) {
 		setButtonText(foodDisplay ? "Show Eaten foods" : "Show History of meals");
 		console.log("Toggled foodDisplay to:", !foodDisplay);
 	}
-	console.log(params);
 
 	return (
 		<div>
